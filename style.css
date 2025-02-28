@@ -1,0 +1,355 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", serif;
+}
+
+.container{ 
+    max-width: 1000px;
+    margin:auto;
+}
+
+    /* google fonts here */
+
+    /* font-family: "Montserrat", serif;
+    font-family: "Roboto Mono", serif;
+    font-family: "Playwrite IT Moderna", serif; */
+
+header{
+    background-color: #24a19c;
+    padding: 0% 1%;
+    text-align: center;
+}
+.nav-logo1{
+    
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color:white;
+    border:2px solid white;
+    border-radius:50%;
+    padding:10px;
+    font-size: 50px;
+    
+}
+.nav-logo{
+    padding: 5px;
+    text-align: center;
+}
+nav ul li{
+    display: block;
+    margin:0 50px;
+}
+nav ul li a{
+    display: block;
+    text-align: center;
+    line-height: 70px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-family: "Roboto Mono", serif;
+    transition: .4s;
+    margin: auto;
+}
+nav ul li a:hover{
+    transform:scale(1.2);
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+
+}
+
+    /* banner starts here */
+#banner-section{
+    background-image: url(Iamages/banner-image.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-contents{
+    padding: 50px 10px;
+    text-align: center;
+}
+.banner-contents h1{
+    width:100%;
+    margin:15px auto;
+    font-size: 3rem;
+    background-color: rgba(255,255,0,0.884);
+    border-radius: 5px;
+    padding: 20px;
+    font-family: "Playwrite IT Moderna", serif;
+}
+
+.banner-contents p{
+    width:300px;
+    margin: 15px auto;
+    background-color: rgb(0,128,0);
+    color:white;
+    padding: 15px;
+    font-size: 1.5rem;
+
+}
+
+.banner-contents .btn{
+    width:160;
+    padding: 10px;
+    font-size: 1.3rem;
+    border:none;
+    border-radius: 5px;
+    background-color: rgb(0,128,0);
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    transition: .4s;
+}
+.banner-contents .btn:hover{
+    transform: scale(1.2);
+    background-color: rgb(3, 87, 3);
+}
+
+/* banner ends here */
+
+/* about us starts here */
+#about-us{
+    padding: 1%;
+    text-align: center;
+}
+.about-us-contents{
+    text-align: center;
+}
+.about-us-contents h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bolder;    
+}
+.about-us-contents p{
+    font-size: .9rem;
+    margin-bottom: 10px;
+    
+}
+.dotedd{
+    border: 5px dotted black;
+    border-bottom: none;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    width: 20%;
+    
+}
+/* about us ends here */
+
+/* food menu section starts here */
+.food-menu{
+    padding: 1%;
+}
+.card-body{
+    text-align: center;
+}
+.card-body img{
+    max-width: 100%;
+    height: 500px;
+    display: block;
+}
+.item-name{
+    background: green;
+    padding: 15px;
+    color:white;
+}
+.item-desc > p{
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding:10px;
+}
+.card{
+    transition: 0.4s;
+}
+.card:hover{
+    transform: scale(1.2);
+}
+/* food menu section starts here */
+.row{
+    width:100%;
+}
+.row::after{
+    display: block;
+    content:'';
+    clear: both;
+}
+[class*="col-"]{
+    float:left;
+    padding:15px;
+}
+[class*="col-"]{
+    width:100%;
+}
+
+/* food menu section ends here */
+
+/* contact starts here */
+#contact{
+    padding: 1%;
+    background: #595B83;
+}
+.map{
+    width:100%;
+    height: 250px;
+}
+.contact-details{
+    color:white;
+    text-align: center;
+    padding: 20px 0;
+}
+.contact-details p,address{
+    font-size: .8rem;
+}
+
+/* footer starts here */
+footer{
+    padding: 1%;
+    color:white;
+    background: #060930;
+}
+footer p{
+    line-height: 32px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.social-menus{
+    text-align: center;
+}
+.icon-style{
+    color:white;
+    width: 52px;
+    height: 52px;
+    line-height: 32px;
+    border-radius: 50%;
+    border:1px solid white;
+    margin:0 10px;
+    transition: .4s;
+    text-align: center;
+    padding: 10px;
+    text-align: center;
+
+}
+.icon-style:hover{
+    background-color: gray;
+    transform: scale(1.2);
+}
+/* footer ends here */
+/* css for small devices */
+
+@media (min-width:576px){
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+}
+
+
+/* css for medium devices */
+
+@media (min-width:768px){
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+}
+
+
+
+/* css for learg devices */
+
+@media (min-width:992px){
+    .nav-logo{
+        text-align: left;
+    }
+    nav ul {
+        text-align: right;
+        
+    }
+    nav ul li{
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+    nav  ul li a{
+        display: inline-block;
+        transition: .4s;
+        
+        margin: 20px auto;
+        line-height: normal;
+    }
+
+    nav ul li a:hover{
+        background-color: transparent;
+        transform: scale(1.3);
+        text-decoration: underline;
+        border-radius: 0;
+    }
+    
+    /* banner starts here */
+    #banner-section{
+        position:relative;
+        height: 100vh;
+    }
+    .banner-contents{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    .banner-contents h1{
+        width:700px;
+        font-size:3.5rem;
+    }
+    .banner-contents p{
+        width:500px;
+        font-size:2.5rem;
+    }
+    /* banner ends here */
+
+
+        /* footer starts here */
+        footer p{
+            text-align: left;
+        }
+        .social-menus{
+            text-align: right;
+        }
+        /* footer ends here */
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+}
